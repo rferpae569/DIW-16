@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5%;
+}
+
+footer{
+    width: 100%;
+    height: 5%;
+}
+
+main{
+    width: 100%;
+}
+
+article{
+    width: 25%;
+    float: left;
+    background-color: rgb(158, 156, 156);
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px dotted black;
+}
+
+article:hover{
+    border-style:solid;
+    transition: width 3s;
+    width: 30%;
+}
+
+@media screen and (max-width:768px) {
+    article{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:480px){
+    article{
+        width: 100%;
+    }
+}
+
+@media screen and (orientation:portrait){
+    header h1{
+        display: block;
+    }
+}
+
+@media screen and (orientation:landscape){
+    header h1{
+        display: none;
+    }
+}

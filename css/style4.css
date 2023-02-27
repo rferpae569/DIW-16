@@ -1,0 +1,17 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    width: 7vw;
+    height: 16vh;
+    margin: 0 auto;
+    position: absolute;
+    top: 40%;
+    transition: transform 1s linear;
+}
+
+.logo:hover{
+    transform: rotateY(360deg);
+}

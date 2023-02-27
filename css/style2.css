@@ -1,0 +1,43 @@
+body{
+    overflow: hidden;
+}
+
+.nombre{
+    font-family: 'Tangerine',sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    position: absolute;
+    top:0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-shadow: 0 0 10px black;
+    animation: animacion 3s linear;
+}
+
+@keyframes animacion{
+    0%{
+        top:0;
+        color: red;
+    }
+
+    25%{
+        top: 50%;
+        color: orange;
+    }
+
+    50%{
+        top: 75%;
+        color: yellow;
+    }
+
+    75%{
+        top: 50%;
+        color: blue;
+    }
+
+    100%{
+        top: 0;
+        left: 100%;
+        color: blue;
+    }
+}

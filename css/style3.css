@@ -1,0 +1,18 @@
+.contenedor{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.palabra{
+    font-size: 40px;
+    font-family: Arial;
+    font-weight: bold;
+    transition: all 0.5 ease-in-out;
+}
+
+.palabra:hover{
+    letter-spacing: 15px;
+}
