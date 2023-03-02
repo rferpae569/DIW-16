@@ -6,18 +6,22 @@ body{
 header{
     position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
     height: 5%;
 }
 
 footer{
+    position: fixed;
     width: 100%;
     height: 5%;
+    bottom: 0;
 }
 
 main{
     width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
 }
 
 article{
@@ -48,13 +52,19 @@ article:hover{
 }
 
 @media screen and (orientation:portrait){
-    header h1{
+    #portrait{
         display: block;
+    }
+    #landscape{
+        display: none;
     }
 }
 
 @media screen and (orientation:landscape){
-    header h1{
+    #portrait{
         display: none;
+    }
+    #landscape{
+        display: block;
     }
 }
